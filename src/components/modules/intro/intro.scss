@@ -1,0 +1,10 @@
+#intro {
+    display: flex;
+    justify-content: center;
+    /* align-self: center;    <---- REMOVE */
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: #666;
+    color: white;
+}
