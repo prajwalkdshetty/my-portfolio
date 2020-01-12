@@ -20,22 +20,13 @@ class App extends Component {
     render() {
         return ( 
             <>
-                {/* <Header /> */}
-                <nav>
-                    <NavLink to="/" exact activeClassName="active">Dashboard</NavLink>
-                    <NavLink to="/contact" activeClassName="active">Contact</NavLink>
-                    {/* <div>Projects</div>
-                    <div>Tech</div>
-                    <NavLink to="/contact" activeClassName="active">Contact</NavLink> */}
-                </nav>
+                <Header />
                 <Switch>
                     {
                         routes.map(route => (
                             <Route key={route.component} path={route.path} exact={!!route.exact} component={route.component} />        
                         ))
                     }
-                    {/* <Route path="/" exact component={AsyncPageDefault} />
-                    <Route path="/contact" component={AsyncPageAnother} /> */}
                 </Switch>
                 {/* <Footer /> */}
             </>       

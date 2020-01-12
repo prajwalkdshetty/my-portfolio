@@ -1,0 +1,47 @@
+header {
+    background-color: black;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.header-container {
+    display: flex;
+}
+#logo {
+    width:  50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+nav {
+    vertical-align: top;
+    display: flex;
+    flex-grow: 1;
+    ul { 
+        display: flex;
+        height: 54px;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;  
+        li {
+            list-style: none;
+            padding-left: 60px;
+            &:first-of-type {
+                padding-left: 0; 
+            }
+        }
+        a {
+            color: white;
+            font-weight: 700;
+            &:hover {
+                color: orange;
+            }
+        }
+        li.is-current a {
+            color: orange;
+        }
+    }
+}   
+  

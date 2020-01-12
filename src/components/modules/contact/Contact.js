@@ -1,5 +1,8 @@
-import React from 'react';
+import React,{ Component } from 'react';
 
-export default () => (
-    <p>Contact ME</p>
-);
+class Contact extends Component {
+    render() {
+        return <p>Contact ME</p>;
+    }
+}
+export default Contact;
