@@ -1,0 +1,68 @@
+@import './../../../styles/variables.scss';
+
+footer {
+    background-color: #4e4e4e;
+
+    display: block;
+    color: white;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 1rem 1.5rem;
+    background: #4e4e4e;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: -15.3rem;
+    z-index: 1;
+
+    #scroll-top {
+        display: inline-block;
+        color: white;
+        font-size: 2.1rem;
+        line-height: 1.3rem;
+    }
+
+    #copyright {
+        float: right;
+        font-size: 1.2rem;
+    }
+
+    .links-container {
+        display: flex;
+        margin-top: 1rem;
+
+        .row {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sub-title {
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+            color: white;
+            cursor: not-allowed;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-landscape) {
+    footer {
+        bottom: -13rem;
+        .links-container {
+            .sub-title {
+                font-size: 1.1rem;
+            }
+    
+            a {
+                font-size: 1.1rem;
+            }
+        }
+    } 
+}

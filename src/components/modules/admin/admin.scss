@@ -1,0 +1,13 @@
+@import './../../../styles/variables.scss';
+#admin {
+    margin: 1.5rem 0;
+    min-height: 20rem;
+}
+
+@media (max-width: $screen-xs) {
+    #admin {
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+}

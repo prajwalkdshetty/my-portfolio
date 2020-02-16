@@ -1,0 +1,92 @@
+@import './../../../styles/variables.scss';
+
+#confirmation-details {
+    padding: 2.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 1.5rem;
+    .button {
+        margin-right: 0;
+    }
+
+    h2 {
+        margin: 1rem 0 3rem;
+        font-size: 2.6rem;
+        font-weight: normal;
+    }
+
+    h3 {
+        color: #666666;
+    }
+
+    #details {
+        max-width: 70%;
+        margin: 2rem;
+        font-size: 1.4rem;
+
+        .label {
+            width: 50%;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            vertical-align: top;
+        }
+
+        .value {
+            width: 50%;
+            display: inline-block;
+        }
+    }
+
+    .details-messages {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+
+        .fa {
+            color: #2886bd
+        }
+
+        span {
+            padding-left: 10px;
+            font-style: italic;
+        }
+    }
+
+    .confirmation-buttons {
+        min-height: 7rem;
+    }
+}
+
+@media (max-width: $screen-xs) {
+    #confirmation-details {
+        padding: 2.5rem 1rem 0 1rem;
+
+        h3 {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            margin: 0 0 2rem;
+            font-size: 2rem;
+        }
+
+        .confirmation-buttons {
+            min-height: auto;
+        }
+
+        .button {
+            margin-right: 0;
+            width: 46%;
+            margin: 2%;
+        }
+
+        #details {
+            margin: 0.5rem;
+            max-width: 100%;
+        }
+    }
+}
+
+@media print {
+    header {
+        position: static;
+    }
+}

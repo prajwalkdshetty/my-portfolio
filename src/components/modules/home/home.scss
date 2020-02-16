@@ -1,0 +1,49 @@
+@import './../../../styles/variables.scss';
+
+.search-results {
+    padding: 1.5rem;
+    position: relative;
+}
+
+#sort-by {
+
+    .form-group {
+        margin-top: -5.7rem;
+        float: right;
+        padding-right: 1.5rem;
+    }
+
+    .form-label {
+        margin-top: 7px;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    .form-select {
+        width: 19rem;
+    }
+}
+
+@media (max-width: $screen-xs-landscape) {
+    .search-results {
+        padding: 1rem;
+    }
+
+    #sort-by {
+        margin-right: 0.5rem;
+
+        .form-label {
+            font-size: 1.2rem;
+        }
+        .form-select {
+            width: 11rem;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-top: -5rem;
+            padding-right: 0.8rem;
+        }
+    }
+}

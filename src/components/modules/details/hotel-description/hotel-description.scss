@@ -1,0 +1,79 @@
+@import './../../../../styles/variables.scss';
+#hotel-decription {
+    margin: 1rem 1.5rem;
+
+    #carousel {
+        margin-top: 1rem;
+        min-height: 30rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        margin: 0 0 0.2rem;
+        text-transform: uppercase;
+    }
+
+    .distance {
+        font-size: 1rem;
+        margin-top: 0.3rem;
+    }
+
+    .description-col-1 {
+        width: 40rem;
+    }
+
+    .img-desc {
+        display: flex;
+    }
+
+    .description-col-2 {
+        width: calc(100% - 40rem);
+        padding-left: 1.5rem;
+        align-self: center;
+        text-align: left;
+    }
+
+    .amenities-container {
+        font-size: 1.2rem;
+        margin: 1rem 0 0;
+    }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md-landscape) {
+    #hotel-decription {
+
+        .description-col-1 {
+            width: 39rem;
+        }
+
+        #carousel {
+            min-height: 22rem;
+        }
+
+        .description-col-2 {
+            width: calc(100% - 31rem);
+        }
+    }
+}
+
+
+@media (max-width: $screen-xs-landscape) {
+    #hotel-decription {
+        #carousel {
+            min-height: 26rem;
+        }
+        .img-desc {
+            flex-direction: column;
+        }
+        .description-col-1 {
+            width: 100%;
+        }
+        .description-col-2 {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+}

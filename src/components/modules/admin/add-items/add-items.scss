@@ -1,0 +1,9 @@
+@import './../../../../styles/variables.scss';
+
+@media (max-width: $screen-xs) {
+    #add-items {
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+}

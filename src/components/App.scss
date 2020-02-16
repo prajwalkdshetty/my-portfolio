@@ -1,18 +1,68 @@
+@import './../styles/variables.scss';
+
+html,
+body,
+#root,
+#app-container {
+  height: 100%;
+  scroll-behavior: smooth
+}
+
 html {
-  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-family: $font-family;
+  background-color: #f5f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
 }
 
-ul, p {
+ul,
+p {
   padding: 0;
   margin: 0;
 }
@@ -27,5 +77,125 @@ li {
 }
 
 .app-spacing {
-  padding: 0 20px
+  padding: 0 1.5rem;
 }
+
+.app-offset {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+body.scroll-hidden {
+  overflow: hidden;
+}
+#app-container {
+  overflow-y: auto;
+}
+.button {
+  margin: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  min-width: 105px;
+  max-width: 270px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.button-small {
+  padding: 3px;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 10px 12px;
+}
+
+.button-1 {
+  background-image: linear-gradient(to right, #666666 0%, #333333 51%, #111111 100%)
+}
+
+.button-1:hover,
+.button-2:hover {
+  background-position: right center;
+}
+
+.button-2 {
+  background-image: linear-gradient(to right, #8b8686 0%, #535050 51%, #434040 100%)
+}
+
+.button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+#content-container {
+  min-height: 100%;
+}
+
+#overlay {
+  display: none;
+  &.show {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 2;
+  }
+  &.showOnFilter {
+    @extend .show;
+    z-index: 1;
+  }
+}
+
+@media (max-width: $screen-xs-landscape) {
+  .app-spacing {
+    padding: 0 1rem;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  #content-container {
+    min-height: 100%;
+  }
+}
+
+@import './../styles/container';
+@import './../styles/forms';
+@import '~font-awesome/css/font-awesome.min.css';

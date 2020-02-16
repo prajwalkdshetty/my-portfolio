@@ -1,0 +1,52 @@
+@import './../../../../styles/variables.scss';
+
+#totalBooking {
+    float: right;
+    margin-top: -2.7rem;
+    font-size: 1.2rem;
+}
+
+.history-list {
+    border: 0.3rem dashed #d8d3d3;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    position: relative;
+
+    h5 {
+        margin: 0 0 1rem;
+    }
+
+    .button {
+        position: absolute;
+        right: 0.5rem;
+        top: 1.8rem;
+        padding: 0.7rem 0;
+        font-size: 1.2rem;
+    }
+
+    .booking-details {
+        font-size: 1.2rem;
+    }
+
+    .booking-date {
+        margin-bottom: 0.3rem;
+    }
+    .bookings-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: $screen-xs) {
+    .history-list {
+        padding: 1rem;
+
+        .button {
+            padding: 0.3rem 0.2rem;
+            margin: 13px auto 6px;
+            width: 100%;
+            display: block;
+            position: static;
+        }
+    }
+}

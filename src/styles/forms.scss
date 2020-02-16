@@ -1,0 +1,45 @@
+@import './../styles/variables.scss';
+.form-group {
+    margin-bottom: 14px;
+    display: flex;
+
+    .form-label {
+        display: inline-block;
+        width: 40%;
+        font-size: 1.3rem;
+    }
+
+    input:not([type=checkbox]),
+    textarea,
+    select {
+        display: inline-block;
+        padding: 0.8rem 1rem;
+        border: 1px solid #ccc;
+        font-size: 1.2rem;
+        width: 60%;
+        cursor: pointer;
+        font-family: $font-family;
+    }
+    select {
+        text-transform: capitalize;
+    }
+
+    .checkbox-group {
+        width: 60%;
+    }
+
+    .checkbox-label {
+        font-size: 12px;
+        margin: 0 10px 10px -4px;
+        vertical-align: top;
+        display: inline-block;
+        min-width: 94px;
+        cursor: pointer;
+    }
+
+    .form-checkbox {
+        margin-top: 3px;
+        margin-bottom: 0;
+        vertical-align: top;
+    }
+}

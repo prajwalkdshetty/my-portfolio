@@ -1,0 +1,24 @@
+
+@import './../../../../styles/variables.scss';
+
+#addRoomsForm {
+    max-width: 70rem;
+    padding: 1rem 0;
+}
+#add-room {
+    margin-top: 1.5rem;
+}
+#add-room-btn {
+    text-align: right;
+    .button {
+        margin: 0 0 1rem 0;
+    }
+}
+@media (max-width: $screen-xs) {
+    #add-room-btn {
+        text-align: center;
+        .button {
+            width: 100%;
+        }
+    }
+}

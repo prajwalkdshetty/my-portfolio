@@ -1,0 +1,33 @@
+@import './../../../../styles/variables.scss';
+
+#addHotelsForm {
+    max-width: 70rem;
+    padding: 1rem 0 0;   
+}
+#add-hotel-btn {
+    text-align: right;
+    .button {
+        margin-right: 0;
+    }
+}
+#hotel-added-message h3 {
+        font-weight: normal;
+        b {
+            text-transform: capitalize;
+        }
+    
+}
+
+
+@media (max-width: $screen-xs) {
+    #add-hotel-btn {
+        text-align: center;
+        .button {
+            width: 100%;
+            margin: 0 0 1rem 0;
+        }
+    }
+    #hotel-added-message h3 {
+        font-size: 1.4rem;
+    }
+}

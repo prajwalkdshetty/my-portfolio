@@ -1,0 +1,19 @@
+#added-room {
+    margin-top: 1.5rem;
+}
+.rooms-added {
+    border: 0.3rem dashed #d8d3d3;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+    h5 {
+        margin: 0 0 5px;
+        font-size: 1.4rem;
+    }
+    .price {
+        display: inline-block;
+    }
+    .occupency {
+        float: right;
+    }
+}

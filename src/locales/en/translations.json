@@ -1,0 +1,124 @@
+{
+    "close": "Close",
+    "select": "Select",
+    "showMore": "Show more",
+    "hideMore": "Hide More",
+    "nav": {
+        "home": "Home",
+        "admin": "Admin",
+        "chooseLanguage": "Choose Language",
+        "loggedInAs": "Logged in as"
+    },
+    "home": {
+        "filter": "Filter",
+        "sortBy": "Sort By",
+        "checkIn": "Check In",
+        "checkOut": "Check Out",
+        "city": "City",
+        "rooms": "Rooms",
+        "adults": "Adults",
+        "children": "Children",
+        "chooseRoom": "Choose Room",
+        "priceCategory": "Price Category",
+        "resultsFound": "results found",
+        "distanceFrom": "meters from City Center",
+        "sortBySelect": {
+            "priceLtoH": "Price (Low to High)",
+            "priceHtoL": "Price (High to Low)",
+            "topRated": "Top Rated",
+            "distance": "Distance"
+        }
+    },
+    "filter": {
+        "filters": "Filters",
+        "ratings": "Ratings",
+        "amenities": "Amenities",
+        "distance": "Distance",
+        "priceCategory": "Price Category",
+        "apply": "Apply",
+        "reset": "Reset",
+        "to": "to",
+        "priceCategoriesList": {
+            "high": "High",
+            "low": "Low",
+            "medium": "Medium"
+        },
+        "amenitiesList": {
+            "free_parking": "Free Parking",
+            "free_wifi": "Free Wifi",
+            "free_breakfast": "Spa",
+            "restaurant": "Restaurant",
+            "pets": "Pets",
+            "gym": "Gym",
+            "pool": "Pool",
+            "spa": "Spa"
+        }
+    },
+    "details": {
+        "price": "Price",
+        "bookNow": "Book Now",
+        "distanceFrom": "meters from City Center"
+    },
+    "confirm": {
+        "congrats": "Congratulations! Your booking in",
+        "confirmed": "is confirmed",
+        "bookingDetails": "Booking Details",
+        "hotel": "Hotel",
+        "name": "Booking Name",
+        "roomType": "Room Type",
+        "bookingNumber": "Booking Number",
+        "bookingNights": "Booking Nights",
+        "checkIn": "Check In",
+        "checkOut": "Check Out",
+        "price": "Price",
+        "emailSent": "We have sent confirmation email to",
+        "amendIn": "You can amend the booking in booking history in",
+        "myBooking": "my bookings",
+        "section": "section",
+        "print": "Print",
+        "modify": "Modify"
+    },
+    "history": {
+        "bookingHistory": "Booking History",
+        "totalBookings": "Total Bookings",
+        "bookingDate": "Booking Date",
+        "location": "Location",
+        "viewDetails": "View Details"
+    },
+    "admin": {
+        "selectOp": "Select an Operation",
+        "addItems": "Add Items",
+        "removeItems": "Remove Items",
+        "noHotels": "No hotels found to delete.",
+        "selectHotels": "Select hotels to Delete",
+        "search": "Search",
+        "hotelName": "Search Hotel",
+        "hotels": "Hotels",
+        "clearSelected": "Clear Selected",
+        "remove": "Remove",
+        "addedRooms": "Added Rooms",
+        "price": "Price",
+        "maxOccupancy": "Max Occupancy",
+        "name": "Name",
+        "addNewRoom": "Room Name",
+        "description": "Description",
+        "roomDescription": "Room Description",
+        "maxOccupency": "Max Occupency",
+        "priceInUsd": "Price (in USD)",
+        "addRoom": "Add Room",
+        "hotelNames": "Hotel Name",
+        "distance": "Distance",
+        "priceCategory": "Price Category",
+        "amenities": "Amenities",
+        "addHotelText": "Please add rooms for",
+        "addANewHotel": "Add a new Hotel",
+        "addHotel": "Add Hotel"
+    },
+    "footer": {
+        "aboutAbc": "About ABC",
+        "copyright": "Copyright",
+        "info": "Info",
+        "bookings": "Bookings",
+        "otherInfo": "Other Info"
+    }
+}

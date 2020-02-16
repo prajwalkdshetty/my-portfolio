@@ -1,0 +1,60 @@
+.rooms-list {
+    display: flex;
+    margin: 0 15px 10px;
+    position: relative;
+    min-height: 140px;
+    text-transform: capitalize;
+    .rooms-col-1 {
+        width: calc(100% - 15rem);
+    }
+
+    .rooms-col-2 {
+        width: 15rem;
+        text-align: right;
+
+        .title {
+            font-size: 1.2rem;
+        }
+
+        .value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    .occupency {
+        margin-bottom: 0.5rem;
+    }
+
+    .desc {
+        margin-top: 1rem;
+        height: 5.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        .more {
+            position: absolute;
+            background: white;
+            color: orange;
+            bottom: -0.2rem;
+            cursor: pointer;
+            right: 0;
+            display: inline-block;
+            padding: 0 1rem;
+        }
+        &.expanded {
+            height: auto;
+        }
+    }
+
+    .button {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+}

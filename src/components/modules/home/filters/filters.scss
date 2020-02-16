@@ -1,0 +1,85 @@
+@import './../../../../styles/variables.scss';
+
+#filter-container {
+    display: none;
+    margin: 0 1.5rem;
+    padding: 0.5rem 1.5rem 3rem;
+    background-color: #f5f2f2;
+    position: relative;
+
+    .close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .filter-type {
+        width: 49%;
+        display: inline-block;
+        padding: 10px;
+        background: white;
+        margin: 0.5%;
+        border: 3px dashed #d8d3d3;
+        transition: 1s;
+
+        h5 {
+            margin-top: 0;
+        }
+
+        &:hover {
+            border-color: orange;
+        }
+    }
+
+    .form-group .checkbox-group {
+        widows: 100%;
+    }
+
+    .filter-items {
+        overflow: auto;
+        height: 112px;
+    }
+
+    &.open {
+        display: block;
+    }
+
+    .apply-button {
+        text-align: right;
+    }
+
+    .distance-slider {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: $screen-xs) {
+    #filter-container {
+        margin: 1rem;
+        padding: 1rem 0.5rem;
+
+        .apply-button {
+            text-align: center;
+
+            .button {
+                width: 48%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .close {
+            right: 0.8rem;
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (max-width: $screen-xs-landscape) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #filter-container {
+        height: 25rem;
+        overflow: scroll;
+    }
+}
