@@ -4,6 +4,7 @@ import routes from '../routes';
 import Header from './modules/header/header';
 import Footer from './modules/footer/footer';
 import './app.scss';
+import Loader from './common/loader/loader';
 
 class App extends Component {
     render() {
@@ -22,6 +23,7 @@ class App extends Component {
                 </section>
                 <Footer />
                 <div id="overlay"></div>
+                <div id="app-loader"><Loader /></div>
             </div>
         );
     }

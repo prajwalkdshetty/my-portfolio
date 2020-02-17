@@ -4,6 +4,7 @@ import { api } from '../../../../api/api';
 import { withTranslation } from 'react-i18next';
 import { TFunction } from 'i18next';
 import { BookingInfo } from '../../../../models/data.model';
+import { loader } from '../../../../utils/utils';
 
 interface IProps {
     t: TFunction;
@@ -45,6 +46,7 @@ class History extends Component<IProps, IState> {
     }
 
     componentDidMount() {
+        loader.show();
         api.get('bookings').then(({ data }: { data: BookingInfo[] }) => {
             localStorage.setItem("history-" + this.props.userId, JSON.stringify(data));
             if (!this.props.showAllBooking) {
@@ -53,6 +55,7 @@ class History extends Component<IProps, IState> {
             this.setState({
                 bookings: data
             });
+            loader.hide();
         }).catch(() => {
             const history = localStorage.getItem("history-" + this.props.userId);
             if (history) {
@@ -61,6 +64,7 @@ class History extends Component<IProps, IState> {
                     bookings: JSON.parse(history)
                 });
             }
+            loader.hide();
         });
     }
 }

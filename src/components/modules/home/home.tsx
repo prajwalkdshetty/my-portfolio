@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import { setHotel, setSearch } from '../../../store/actions/appActions';
 import { api } from '../../../api/api';
-import { customSort } from '../../../utils/utils';
+import { customSort, loader } from '../../../utils/utils';
 import { Select } from '../../ui/select/select';
 import { FiltersData } from '../../../data/filters-data';
 import { Hotel, HotelResp, SearchData, Filters } from '../../../models/data.model';
@@ -64,11 +64,13 @@ class Home extends Component<IProps, IState> {
     }
 
     componentDidMount() {
+        loader.show();
         api.get('hotels').then(({ data } : HotelResp) => {
             this.setState({
                 hotelsRes: data
             });
             this.onSorting(this.state.sortBy, data);
+            loader.hide();
         })
     }
 

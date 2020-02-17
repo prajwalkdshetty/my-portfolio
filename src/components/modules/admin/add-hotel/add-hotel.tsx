@@ -5,7 +5,7 @@ import { Input } from '../../../ui/input/input';
 import { Select } from '../../../ui/select/select';
 import { Checkbox } from '../../../ui/checkbox/checkbox';
 import { api } from '../../../../api/api';
-import { uuidv4 } from '../../../../utils/utils';
+import { uuidv4, loader } from '../../../../utils/utils';
 import { Hotel, Room } from '../../../../models/data.model';
 import { TFunction } from 'i18next';
 import { withTranslation } from 'react-i18next';
@@ -135,12 +135,14 @@ class AddHotel extends Component<IProps, IState> {
             "http://via.placeholder.com/100x140",
             "http://via.placeholder.com/140x140"
         ];
+        loader.show();
         api.post('hotels', newHotel).then(({ data }: { data: Hotel}) => {
-            alert("Hotel added successfully!");
+            alert(this.props.t('admin.hotelAddedSuccess'));
             this.props.onHotelAdded(data);
             this.setState({
                 roomAdded: true
             });
+            loader.hide();
         })
     }
 

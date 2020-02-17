@@ -2,7 +2,7 @@
     "close": "Close",
     "select": "Select",
     "showMore": "Show more",
-    "hideMore": "Hide More",
+    "hideMore": "Hide more",
     "nav": {
         "home": "Home",
         "admin": "Admin",
@@ -112,7 +112,10 @@
         "amenities": "Amenities",
         "addHotelText": "Please add rooms for",
         "addANewHotel": "Add a new Hotel",
-        "addHotel": "Add Hotel"
+        "addHotel": "Add Hotel",
+        "hotelDeletedSuccess": "Hotels deleted successfully!",
+        "roomAddedSuccess": "Room added successfully!",
+        "hotelAddedSuccess": "Hotel added successfully!"
     },
     "footer": {
         "aboutAbc": "About ABC",

@@ -8,6 +8,7 @@ import { withTranslation } from 'react-i18next';
 import { TFunction } from 'i18next';
 import { Select } from '../../ui/select/select';
 import { FiltersData } from '../../../data/filters-data';
+import i18n from '../../../locales/i18n';
 
 interface IProps {
     user: User;
@@ -45,7 +46,6 @@ class Header extends Component<IProps, IState> {
                                     options={FiltersData.language}
                                     title={t('nav.chooseLanguage')}
                                     name={'language'}
-                                    selected={'en'}
                                     handleChange={this.onLanguageChange}
                                     hideLabel={true}
                                 />
@@ -60,8 +60,9 @@ class Header extends Component<IProps, IState> {
     }
 
     onLanguageChange(event: FormEvent): void {
-        
+        i18n.changeLanguage((event.target as HTMLInputElement).value);
     }
+
     menuSelected(): void {
         const classList = (this.refs.header as HTMLElement).classList;
         classList.remove('open');

@@ -2,7 +2,7 @@ import React, { Component, FormEvent } from 'react';
 import './add-room.scss';
 import { Input } from '../../../ui/input/input';
 import { api } from '../../../../api/api';
-import { uuidv4 } from '../../../../utils/utils';
+import { uuidv4, loader } from '../../../../utils/utils';
 import { TFunction } from 'i18next';
 import { Room, Hotel } from '../../../../models/data.model';
 import { withTranslation } from 'react-i18next';
@@ -108,15 +108,18 @@ class AddRoom extends Component<IProps, IState> {
         const noOfItems = roomsAdded.length;
         roomsAdded.push(newRoom);
         const self = this;
+        loader.show();
         if (noOfItems === 0) {
             api.post('rooms', { id: hotelDetails.id, "rooms": roomsAdded }).then(() => {
                 self.onRoomAddSuccess(roomsAdded);
-                alert("Room added successfully!");
+                alert(self.props.t('admin.roomAddedSuccess'));
+                loader.hide();
             });
         } else {
             api.put('rooms/' + hotelDetails.id, { id: hotelDetails.id, "rooms": roomsAdded }).then(() => {
                 self.onRoomAddSuccess(roomsAdded);
-                alert("Room added successfully!");
+                alert(self.props.t('admin.roomAddedSuccess'));
+                loader.hide();
             });
         }
     }

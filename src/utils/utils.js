@@ -27,3 +27,12 @@ export function uuidv4() {
       return v.toString(16);
     });
   }
+
+export const loader = {
+  show: () => {
+    document.getElementById("app-loader").classList.add('show');
+  },
+  hide: () => {
+    document.getElementById("app-loader").classList.remove('show');
+  }
+}

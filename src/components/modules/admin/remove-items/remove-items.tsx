@@ -6,6 +6,7 @@ import { api } from '../../../../api/api';
 import { Hotel } from '../../../../models/data.model';
 import { TFunction } from 'i18next';
 import { withTranslation } from 'react-i18next';
+import { loader } from '../../../../utils/utils';
 
 interface IProps {
     t: TFunction;
@@ -119,21 +120,24 @@ class RemoveItems extends Component<IProps, IState> {
         this.state.selectedHotels.forEach(data => {
             promises.push(this.requestPromise(data));
         });
-
-        Promise.all(promises).then(values => {
-            alert("Hotels deleted successfully!");
+        loader.show();
+        Promise.all(promises).then(() => {
+            alert(this.props.t('admin.hotelDeletedSuccess'));
             this.clearSelection();
             this.getHotels();
+            loader.hide();
         });
     }
 
     getHotels(): void {
+        loader.show();
         api.get('hotels').then(({ data }: { data: Hotel[] }) => {
             const hotels: HotelValues[] = data.map((hotel: Hotel) => ({ label: hotel.name, value: hotel.id }));
             this.setState({
                 hotels,
                 hotelsForView: hotels
             });
+            loader.hide();
         });
     }
 

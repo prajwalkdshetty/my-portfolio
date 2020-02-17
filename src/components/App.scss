@@ -181,6 +181,12 @@ body.scroll-hidden {
   }
 }
 
+#app-loader {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
 @media (max-width: $screen-xs-landscape) {
   .app-spacing {
     padding: 0 1rem;

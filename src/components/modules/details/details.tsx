@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import { setRoom, setBookingInfo } from '../../../store/actions/appActions';
 import { api } from '../../../api/api';
-import { uuidv4 } from '../../../utils/utils';
+import { uuidv4, loader } from '../../../utils/utils';
 import { TFunction } from 'i18next';
 import { Hotel, Room, User, SearchData, BookingInfo } from '../../../models/data.model';
 import Rooms from './room/rooms';
@@ -41,12 +41,14 @@ class Details extends Component<IProps, IState> {
     componentDidMount() {
         const {id} = this.props.selectedHotel;
         if(id) {
+            loader.show();
             api.get('rooms/'+id).then(({data}: any) => {
                 this.setState({
                     ...this.state,
                     hotelId: id,
                     rooms: data.rooms
-                })
+                });
+                loader.hide();
             })
         }
     }
@@ -83,11 +85,12 @@ class Details extends Component<IProps, IState> {
             bookingNumber: this.getUniqueNumber()
         }
 
-
+        loader.show();
         api.post('bookings', booking).then(({data}: {data: BookingInfo}) => {
             sessionStorage.setItem("navigatedFromDetails", "true");
             props.setBookingInfo(data);
             props.history.push("/confirmation/"+props.user.userId);
+            loader.hide();
         })        
     }
     

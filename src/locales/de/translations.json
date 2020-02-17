@@ -1,3 +1,127 @@
 {
-    "Check In": "Check In"
+    "close": "Schließen",
+    "select": "Wählen",
+    "showMore": "Zeig mehr",
+    "hideMore": "Mehr verstecken",
+    "nav": {
+        "home": "Zuhause",
+        "admin": "Administratorin",
+        "chooseLanguage": "Sprache wählen",
+        "loggedInAs": "Angemeldet als"
+    },
+    "home": {
+        "filter": "Filter",
+        "sortBy": "Sortiere nach",
+        "checkIn": "Check-In",
+        "checkOut": "Auschecken",
+        "city": "Stadt",
+        "rooms": "Räume",
+        "adults": "Erwachsene",
+        "children": "Kinder",
+        "chooseRoom": "Wählen Sie Raum",
+        "priceCategory": "Preiskategorie",
+        "resultsFound": "gefundene Ergebnisse",
+        "distanceFrom": "Meter vom Stadtzentrum entfernt",
+        "sortBySelect": {
+            "priceLtoH": "Preis niedrig bis hoch)",
+            "priceHtoL": "Preis (hoch bis niedrig) ",
+            "topRated": "Bestbewertet",
+            "distance": "Entfernung"
+        }
+    },
+    "filter": {
+        "filters": "Filter",
+        "ratings": "Bewertungen",
+        "amenities": "Ausstattung",
+        "distance": "Entfernung",
+        "priceCategory": "Preiskategorie",
+        "apply": "Anwenden",
+        "reset": "Zurücksetzen",
+        "to": "zu",
+        "priceCategoriesList": {
+            "high": "Hoch",
+            "low": "Niedrig",
+            "medium": "Mittel"
+        },
+        "amenitiesList": {
+            "free_parking": "Kostenlose Parkplätze",
+            "free_wifi": "Gratis Wifi",
+            "free_breakfast": "Spa",
+            "restaurant": "Restaurant",
+            "pets": "Haustiere",
+            "gym": "Fitnessstudio",
+            "pool": "Schwimmbad",
+            "spa": "Spa"
+        }
+    },
+    "details": {
+        "price": "Preis",
+        "bookNow": "buchen Sie jetzt",
+        "distanceFrom": "Meter vom Stadtzentrum entfernt"
+    },
+    "confirm": {
+        "congrats": "Herzliche Glückwünsche! Ihre Buchung in",
+        "confirmed": "ist bestätigt",
+        "bookingDetails": "Buchungsdetails",
+        "hotel": "Hotel",
+        "name": "Buchungsname",
+        "roomType": "Zimmertyp",
+        "bookingNumber": "Buchungsnummer",
+        "bookingNights": "Buchungsnächte",
+        "checkIn": "Check-In",
+        "checkOut": "Auschecken",
+        "price": "Preis",
+        "emailSent": "Wir haben eine Bestätigungs-E-Mail an gesendet",
+        "amendIn": "Sie können die Buchung im Buchungsverlauf in ändern",
+        "myBooking": "Meine Buchungen",
+        "section": "Sektion",
+        "print": "Drucken",
+        "modify": "Ändern"
+    },
+    "history": {
+        "bookingHistory": "Buchungsverlauf",
+        "totalBookings": "Buchungen insgesamt",
+        "bookingDate": "Buchungsdatum",
+        "location": "Ort",
+        "viewDetails": "Details anzeigen"
+    },
+    "admin": {
+        "selectOp": "Wählen Sie eine Operation aus",
+        "addItems": "Gegenstand hinzufügen",
+        "removeItems": "Teile entfernen",
+        "noHotels": "Keine Hotels zum Löschen gefunden.",
+        "selectHotels": "Wählen Sie die zu löschenden Hotels aus",
+        "search": "Suche",
+        "hotelName": "Suche Hotel",
+        "hotels": "Hotels",
+        "clearSelected": "Ausgewählte löschen",
+        "remove": "Entfernen",
+        "addedRooms": "Zimmer hinzugefügt",
+        "price": "Preis",
+        "maxOccupancy": "Maximale Belegung",
+        "name": "Name",
+        "addNewRoom": "Raumname",
+        "description": "Beschreibung",
+        "roomDescription": "Zimmerbeschreibung",
+        "maxOccupency": "Maximale Belegung",
+        "priceInUsd": "Preis (in USD) ",
+        "addRoom": "Raum hinzufügen",
+        "hotelNames": "Hotelname",
+        "distance": "Entfernung",
+        "priceCategory": "Preiskategorie",
+        "amenities": "Ausstattung",
+        "addHotelText": "Bitte Zimmer hinzufügen für",
+        "addANewHotel": "Fügen Sie ein neues Hotel hinzu",
+        "addHotel": "Hotel hinzufügen",
+        "hotelDeletedSuccess": "Hotels erfolgreich gelöscht! ",
+        "roomAddedSuccess": "Raum erfolgreich hinzugefügt! ",
+        "hotelAddedSuccess": "Hotel erfolgreich hinzugefügt! "
+    },
+    "footer": {
+        "aboutAbc": "Über ABC",
+        "copyright": "Urheberrechte ©",
+        "info": "Die Info",
+        "bookings": "Buchungen",
+        "otherInfo": "Andere Information"
+    }
 }
